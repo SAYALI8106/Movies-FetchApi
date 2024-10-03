@@ -11,11 +11,14 @@ h1 {
     margin-bottom: 10px;
 }
 #movies-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    display: flex;
+    justify-content: center;
+align-items: center;
     gap: 20px;
     padding: 20px;
+   
     max-width: 1200px;
+   
     margin: 0 auto;
 }
 .movie-card {
@@ -25,6 +28,7 @@ h1 {
     overflow: hidden;
     transition: transform 0.2s, box-shadow 0.2s;
     text-align: center;
+    width: 200px;
 }
 .movie-card:hover {
     transform: translateY(-5px);
@@ -62,4 +66,31 @@ h1 {
     .movie-card {
         margin-bottom: 20px;
     }
+}
+
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     width: 100%;
+}
+input{
+    width: 50%;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    padding: 0 10px;
+    font-size: 16px;
+}
+
+#search-button{
+    height: 40px;
+    width: 80px;
+    border-radius: 10px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 10px;
 }
